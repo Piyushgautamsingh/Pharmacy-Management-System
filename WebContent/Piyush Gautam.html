@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Piyush Gautam</title>
+<style>
+html, body
+        {
+            padding: 0;
+            margin-top: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Helvetica Neue" , Helvetica, sans-serif;
+            -webkit-transition: background 1.0s ease-in;
+-moz-transition: background 1.0s ease-in;
+-ms-transition: background 1.0s ease-in;
+-o-transition: background 1.0s ease-in;
+transition: background 1.0s ease-in;
+ background: url("background.jpg");
+ background-repeat: repeat;
+}
+.header {
+  overflow: hidden;
+  background-color:#64DDBF;
+  padding: 5px 40px;
+
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+   font-family: helvetica, serif;
+  line-height: 10px;
+  border-radius: 4px;
+}
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: 0;
+}
+
+.header h1 {
+  position: relative;
+  top: 25px;
+  left: 15px;
+  font-size: 10px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+  font-size: 10px;
+}
+
+
+.logincontent
+        {
+       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            width: 680px;
+            height: 450px;
+            top: 60%;
+            left: 76%;
+            margin-top: -280px;
+            margin-left: -505px;
+            background:#ffff;
+            padding-top: 40px;
+        }
+     
+     .loginheading
+        {
+            border-bottom: solid 3px #ffff ;
+            padding-left: 45px;
+              margin-left: 1px;
+            padding-bottom: 12px;
+            color: #00000;
+            font-size: 15px;
+            font-weight: semibold;
+            font-family: Sans-serif;
+            text-align: justify;
+        }
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col_25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col_50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col_75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col_25,
+.col_50,
+.col_75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+   margin-top:15px;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+.footer {
+clear: both;
+    position: relative;
+  padding: 1rem;
+     margin-top: 1500px;
+  background-color: #efefef;
+  text-align: center;
+}
+ .main
+ {
+  width:700px;;
+  margin-left:350px;
+  margin-top:50px;
+  padding: 10px;
+  border: 5px solid grey;
+   
+ }
+ table
+ {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 600px;
+  margin-left:50px;
+ }
+ td
+ {
+  border: 5px solid silver;
+  text-align: center;
+  padding: 10px;
+  
+ }
+ a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color:#E0EDEB ;
+  color: black;
+}
+
+.previous {
+  background-color: #E0EDEB ;
+  color: black;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+   margin-left: 150px;
+  text-align: center;
+  float:left;
+    background:#ffff;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}</style>
+</head>
+<body>
+
+<div class="header">
+  <div class=".header img ">
+  <img src="Logo.png" alt="logo" height="62" width="82"></div>
+  <a href="index.html" class="logo1"><b><font size="6">MediCrest</font></b><br><br>Live healthy. Live happy. Live Longs.</a>
+  
+  <div class="header-right">
+    <a class="active" href="index.html">Home</a>
+     <a href="About.html">About</a>
+    <a href="Customers Speak.html">Customers Speak</a>
+     </div>
+     </div>
+      <br>
+
+     <br>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card">
+  <img src="Piyush.jpg" alt="John" style="width:100%">
+  <h1>Piyush Gautam</h1>
+  <p class="title">CEO & Founder, Medicrest</p>
+  <p>B.E,MVJ College of Engineering</p>
+  <a href="#"><i class="fa fa-dribbble"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <p><button>Contact</button></p>
+</div>
+  <div class="logincontent">
+        <div class="loginheading"><p><b>Bron:</b>14-Dec-1998<br>
+        
+        <br><b>Full name:</b> Piyush Gautam Singh<br>
+        <br><b>Education:</b> B.E  MVJ College of Engineering(2021)<br>
+        <br><b>Residence:</b> Aurangabad,Bihar<br>
+       <br><b> Nationality:</b>Indian
+        <p> Medicrest Online Pharmacy management system designed by Piyush Gautam in 2019.<br>Who is formal CEO of Medicrest.He attended the DAV Public School at M.g Road, Bihar<br>
+Aim to provide care like homely facilities od medicine in region of Bihar And Eastern UP.<br> Medicrest Ltd branches are located in Bihar and UP, that offer a variety of care packages<br> to suit the personal care needs of their elderly residents.The services are set up to respect <br>the independence of service users, while ensuring they feel confident and secure in their<br> lifestyles.</p>
+
+</div>
+</div>
+ 
+  </div>
+</div>
+</body>
+</html>
